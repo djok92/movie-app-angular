@@ -1,0 +1,21 @@
+<div class="single-movie">
+  <div class="card mb-3" style="max-width: 540px;">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img [src]="img" class="card-img" alt="movie picture">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{ title }}</h5>
+          <p class="card-text">{{ desc }}</p>
+          <p class="card-text">Actors: {{ actors }}</p>
+          <p class="card-text">Director: {{ director }}</p>
+          <p class="card-text">Rating: {{ rating }}</p>
+          <p>Enjoyed movie? Like it! <a href="#"><i class="fas fa-thumbs-up"></i></a></p>
+          <a [routerLink]="['/movie-info', id]" *ngIf="showLink">See full info of movie</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

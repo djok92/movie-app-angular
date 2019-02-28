@@ -1,0 +1,12 @@
+<div class="container">
+    <h1>Movie finder App</h1>
+    <app-movie-card *ngFor="let movie of movies" 
+                    [img]="movie.img" 
+                    [title]="movie.title" 
+                    [desc]="movie.description"
+                    [actors]="movie.actors"
+                    [director]="movie.director" 
+                    [rating]="movie.rating"
+                    [id]="movie.id">
+    </app-movie-card>
+</div>

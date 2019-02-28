@@ -1,0 +1,11 @@
+.single-movie {
+    margin-top: 30px;
+}
+
+.single-movie > div {
+    margin: 0 auto;
+}
+
+img {
+    height: 100%;
+}
